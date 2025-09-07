@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <style>
+        p{
+            margin-bottom: 1rem ;
+        }
+        *{
+            margin: 0px;
+            padding: 0px ;
+            box-sizing: border-box;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex ;
+            align-items: center ;
+            justify-content: center ;
+            height: 100vh ;
+        }
+        .box{
+display: flex ;
+flex-direction: column;
+align-items: center ;
+justify-content: center ;
+background-color: rgb(79, 79, 77);
+padding: 1rem  ;
+border-radius: 8px ;
+
+        }
+        h1{
+            font-size: 2rem ;
+            font-weight: 1000;
+margin-bottom: 1rem ;
+        }
+        #city{
+            height: 3rem;
+            border-radius: 6px ;
+            text-align: center;
+            font-size: 1rem ;
+            margin-right: 1rem ;
+            color: black ;
+            font-weight: 800;
+        }
+        #getwe{
+            background-color: rgb(32, 32, 220);
+            height: 2.5rem;
+        padding: 0 6px  ;
+        border-radius: 5px ;
+        cursor: pointer;
+        border: transparent;
+        font-weight: 6000;
+        }
+         #getwe:hover{
+            background-color: rgb(44, 44, 147);
+         }
+         .hidden{
+            display: none  ;
+         }
+         #weather-info{
+            margin-top: 1.5rem ;
+         }
+         #error{
+            color: red;
+            margin-top: 1.5rem ;
+         }
+         h2{
+            margin-bottom: 1rem ;
+         }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <main class="box">
+            <h1>Weather App</h1>
+            <div class="input">
+                <input type="text" placeholder="Enter a city:" id="city">
+                <button id="getwe">Get weather </button>
+            </div>
+<div id="weather-info" class="hidden">
+    <h2 id="city-name"> </h2>
+    <p id="temp"></p>
+    <p id="description"></p>
+</div>
+<p id="error" class="hidden"> City not found try again</p>
+        </main>
+    </section>
+    <script src="weather.js"></script>
+</body>
+</html>

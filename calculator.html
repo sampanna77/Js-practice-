@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0px ;
+            padding: 0px ;
+            
+        }
+.box{
+    background-color: rgb(149, 133, 133);
+
+}
+.num{
+    color: white ;
+}
+.wrapper{
+    height: 100vh ;
+    display: flex ;
+    align-items: center;
+    justify-content: center ;
+}
+.calculator
+{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(235, 232, 228);
+    padding: 2rem ;
+}
+.container{
+    display: grid;
+ grid-template-columns: repeat(4,1fr );
+gap: 1rem ;
+background-color: rgb(72, 66, 66);
+padding: 2rem ;
+border-radius:  ;
+
+}
+.box{
+    padding: 10px ;
+    border-radius: 5px ;
+text-align: center;
+font-weight: 800;
+font-size: 20px ;
+}
+.op{
+   font-size: 25px  ;
+    background-color: rgb(122, 127, 131);
+}
+.equal{
+    background-color : orange;
+}
+.display{
+  width: 100%;  
+  display: flex;
+  align-items: center ;
+  justify-content: center ;
+  text-align: center ;
+  background-color: rgb(121, 128, 133);
+  height: 4rem ;
+  color: white ;
+  font-size: 20px ;
+  font-weight: 600;
+}
+button{
+    cursor: pointer;
+}
+.wrap{
+    display: flex ;
+    flex-direction: column;
+}
+h2{
+    margin-bottom: 1rem ;
+}
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+<section class="calculator">
+    <h2>Modern calulator </h2>
+    <div class="wrap">
+        <div class="display" id="display"> </div>
+    <main class="container">
+        <button class="box" id="ac">AC</button>
+        <button class="box" id="remove">❌</button>
+        <button class="box" id="percentile">%</button>
+        <button class="box op num " id="divide">/</button>
+        <button class="box num" id="">7</button>
+        <button class="box num" id="">8</button>
+        <button class="box num" id="">9</button>
+        <button class="box op num  " id="multiply">*</button>
+        <button class="box num" id="">4</button>
+        <button class="box num" id="">5</button>
+        <button class="box num" id="">6</button>
+        <button class="box op num " id="subtract">-</button>
+        <button class="box num" id="">1</button>
+        <button class="box num " id="">2</button>
+        <button class="box num" id="">3</button>
+        <button class="box op num " id="plus">+</button>
+        <button class="box " id="">ok</button>
+        <button class="box num" id="">0</button>
+        <button class="box num" id="">.</button>
+        <button class="box equal op" id="equal">=</button>
+    </main>
+    </div>
+</section>  
+</section> 
+<script src="calculator.js"></script> 
+</body>
+</html>
